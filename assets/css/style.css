@@ -138,8 +138,10 @@ ul {list-style: none;
 }
 
 #banner {
+    height: 22rem;
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    background-repeat: no-repeat;
    
 }
 
@@ -176,7 +178,6 @@ ul {list-style: none;
     background-color: var(--footer-background-color);
 }
 
-.pink-star
 
 
 /* endBanner */
