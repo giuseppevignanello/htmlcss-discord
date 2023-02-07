@@ -11,6 +11,10 @@ html:root {
     --secondary-color: #f6f6f6;
     --footer-background-color: #23272a;
     --footer-text-color: #6d84d1;
+    --first-star: #ff7abc;
+    --second-star: #628bf6; 
+    --third-star: #6adbc6;
+    --download-button: #8ea1e1;
 
 }
 
@@ -150,14 +154,19 @@ h2 {
     color: var(--main-color);
 }
 
- #banner div h2,p {
+ #banner div h2 {
+    margin-bottom: 2rem;
+ }
+
+ #banner div p {
     margin-bottom: 2rem;
  }
 
 
 
-#banner div span {
-    margin: 0 1rem;
+.badge {
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 30px;
     padding: 0.5rem 1rem; 
 }
@@ -171,6 +180,7 @@ h2 {
     background-color: var(--footer-background-color);
 }
 
+.pink-star
 
 
 /* endBanner */
@@ -199,7 +209,7 @@ h2 {
     background-color: var(--main-color);
 }
 
-#site-main #easy {
+#site-main #easy, #keep-in-touch {
     background-color: var(--secondary-color);
 }
 
@@ -208,19 +218,63 @@ h2 {
 }
 
 .section-content {
-    padding-top: 3rem;
+    padding: 3rem 0;
+
 }
 
-main section img {
+main .small-section img {
     width: calc((100%/12)*7);
     height: 100%;
 }
 
-main section h2 {
+main .small-section h2 {
     margin-bottom: 2rem;
 }
-main section .text {
+main.small-section .text {
     width: calc((100%/12)*3)
+}
+
+main #keep-in-touch {
+    text-align: center;
+}
+
+main #keep-in-touch .container {
+    padding: 7rem 0;
+}
+
+main #keep-in-touch h2 {
+    padding-bottom: 2rem
+}
+
+.first-star {
+    color: var(--first-star);
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+.second-star {
+    color: var(--second-star);
+    font-size: 1rem;
+    position: relative;
+    left: 8px;
+    bottom: 8px;
+}
+
+.third-star{
+    color: var(--third-star);
+    font-size: 0.8rem;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+}
+
+#keep-in-touch .badge {
+    background-color: var(--download-button);
+    color: var(--main-color);
+    display: inline-block;
+    margin-top: 2rem;
 }
 
 
