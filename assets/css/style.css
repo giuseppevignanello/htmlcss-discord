@@ -321,7 +321,7 @@ main #keep-in-touch h2 {
 }
 
 #language-social-section {
-    width: calc((100%/12)*4);
+    width: calc((100%/12)*3);
     color: var(--main-color);
     
 }
@@ -340,8 +340,19 @@ main #keep-in-touch h2 {
     margin-top: 1rem;
 }
 
-#site-footer #top-footer #footer-menu div {
-    width: calc((100%12)*2)
+#footer-menu {
+    width: calc((100%/12)*7);
+}
+
+#footer-menu ul {
+    color: var(--main-color);
+    font-size: 12px;
+    line-height: 1rem;
+}
+
+#footer-menu .title-footer-menu{
+    color:var(--footer-text-color);
+    flex-wrap: nowrap;
 }
 
 
