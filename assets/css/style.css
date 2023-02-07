@@ -63,9 +63,6 @@ img {
 /* endUtility */
 
 /* header */
-#site-header {
-    background-color: var(--header-color);
-}
 
 .debug #site-header {
     height: 5rem; 
@@ -75,6 +72,9 @@ img {
 .debug #site-header>div {
     height: 3rem;
     background-color: yellow;
+}
+#site-header {
+    background-color: #3161e0;
 }
 
 #site-header>div {
@@ -125,11 +125,45 @@ img {
     background-color: grey; 
 }
 
+#banner {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+   
+}
 
- #banner div {
+#banner>div {
     margin: 3rem;
     padding: 0 6rem; 
+    text-align: center;
+    color: var(--main-color);
 }
+
+ #banner div h1,p {
+    margin-bottom: 2rem;
+ }
+
+ #banner div h1 {
+    font-size: 35px;
+ }
+
+
+#banner div span {
+    margin: 0 1rem;
+    border-radius: 30px;
+    padding: 0.5rem 1rem; 
+}
+
+#banner div #download-badge {
+    background-color: #ffffff;
+    color: var(--footer-background-color);
+}
+
+#banner div #open-badge {
+    background-color: var(--footer-background-color);
+}
+
+
+
 /* endBanner */
 
 .debug #site-main .section-content {
