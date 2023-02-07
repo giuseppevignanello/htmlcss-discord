@@ -14,14 +14,19 @@ html:root {
 
 }
 
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
 .container {
     width: 70%;
     margin: auto;
 }
 
-.d-flex {
-    display: flex;
-} 
 
 .debug * :not(section, .container){
     border: 3px solid red;
@@ -31,12 +36,20 @@ html:root {
 /* endGeneral  */
 
 /* Utility  */
+.d-flex {
+    display: flex;
+} 
+
 .jc-c {
     display: flex;
     justify-content: center;
 }
 .jc-sb {
     justify-content: space-between;
+}
+
+.jc-sa {
+    justify-content: space-around;
 }
 
 .full-width {
@@ -65,15 +78,36 @@ html:root {
 }
 
 #site-header>div {
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    font-size: 12px;
+    line-height: 2rem;
 }
 
-#logo, #menu, #login{
-    width: calc((100%/12)*2);
+#site-menu #logo {
+    width: calc(((100%/12)*2) - 2rem);
+
 }
 
-#site-header nav {
-   flex-grow: 3;
+#site-menu #login {
+    width: calc(((100%/12)*1) - 2rem);
+}
+
+#site-header #menu {
+    width: calc(((100%/12)*8) - 2rem);
+}
+
+#site-header nav ul {
+    list-style: none;
+    color: var(--main-color);
+}
+
+
+#site-header #login {
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 0 0.8rem;
+    text-align: center;
 }
 /* endHeader */
 
