@@ -30,6 +30,9 @@ h2 {
     font-size: 30px;
  }
 
+ul {list-style: none;
+}
+
 .container {
     width: 70%;
     margin: auto;
@@ -66,14 +69,6 @@ h2 {
 
 .full-height {
     height: 100%;
-}
-
-.col-40{
-    width: 40%;
-}
-
-.col-60{
-    width: 60%;
 }
 
 /* endUtility */
@@ -113,8 +108,9 @@ h2 {
     width: calc(((100%/12)*8) - 2rem);
 }
 
+
+   
 #site-header nav ul {
-    list-style: none;
     color: var(--main-color);
 }
 
@@ -312,21 +308,41 @@ main #keep-in-touch h2 {
     background-color: var(--footer-background-color);
 }
 
-#site-footer #footer-container {
+#footer-container {
     flex-direction: column;
 }
-#site-footer #footer-container #top-footer {
-    margin-top: 1rem;
+#top-footer {
+    margin-top: 3rem
 }
-#site-footer #footer-container #bottom-footer {
+
+
+#bottom-footer {
     margin-bottom: 0;
 }
 
-#site-footer #top-footer #language-social-section {
+#language-social-section {
     width: calc((100%/12)*4);
+    color: var(--main-color);
+    
 }
+
+#language-social-section h2 {
+    color: var(--footer-text-color);
+    line-height: 2rem;
+    margin-bottom:1.5rem;
+}
+
+#language-social-section img {
+    width: 1rem;
+}
+
+#language-social-section ul {
+    margin-top: 1rem;
+}
+
 #site-footer #top-footer #footer-menu div {
     width: calc((100%12)*2)
 }
+
 
 /* endSiteFooter */
