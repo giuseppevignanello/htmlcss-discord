@@ -312,7 +312,8 @@ main #keep-in-touch h2 {
     flex-direction: column;
 }
 #top-footer {
-    margin-top: 3rem
+    margin-top: 3rem;
+    margin-bottom:3rem;
 }
 
 
@@ -329,7 +330,8 @@ main #keep-in-touch h2 {
 #language-social-section h2 {
     color: var(--footer-text-color);
     line-height: 2rem;
-    margin-bottom:1.5rem;
+    margin-bottom:1rem;
+    font-size: 25px;
 }
 
 #language-social-section img {
@@ -352,8 +354,16 @@ main #keep-in-touch h2 {
 
 #footer-menu .title-footer-menu{
     color:var(--footer-text-color);
-    flex-wrap: nowrap;
 }
 
+#bottom-footer {
+    margin-top: 4rem;
+    margin-bottom:4rem;
+}
+
+#sign-in {
+    color: var(--main-color);
+    background-color: var(--download-button);
+}
 
 /* endSiteFooter */
