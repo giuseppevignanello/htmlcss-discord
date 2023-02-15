@@ -75,6 +75,13 @@ svg {
     height: 100%;
 }
 
+.badge {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 30px;
+    padding: 0.5rem 1rem; 
+}
+
 /* endUtility */
 
 /* header */
@@ -90,6 +97,11 @@ svg {
 }
 #site-header {
     background-color: #3161e0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    
 }
 
 #site-header>div {
@@ -163,15 +175,6 @@ svg {
  #banner div p {
     margin-bottom: 2rem;
  }
-
-
-
-.badge {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border-radius: 30px;
-    padding: 0.5rem 1rem; 
-}
 
 #banner div #download-badge {
     background-color: #ffffff;
